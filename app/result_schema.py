@@ -1,0 +1,33 @@
+from marshmallow import Schema, fields
+
+class ResultItemResponseSchema(Schema):
+    record_id = fields.Integer()
+    process_id = fields.String()
+    bin_url = fields.String()
+    sampleid = fields.String()
+    catalognum = fields.String()
+    fieldnum = fields.String()
+    institution_storing = fields.String()
+    identification_provided_by = fields.String()
+    phylum = fields.String()
+    class_name = fields.String()
+    order_name = fields.String()
+    voucher_status = fields.String()
+    reproduction = fields.String()
+    sex = fields.String()
+    lifestage = fields.String()
+    country = fields.String()
+    lat = fields.String()
+    lon = fields.String()
+    coord_source = fields.String()
+    coord_accuracy = fields.String()
+    sequenceid = fields.String()
+    markercode = fields.String()
+    nucleotides = fields.String()
+    notes = fields.String()
+    image_urls = fields.String()
+    geo_location = fields.String()
+
+class ResultItemRequestSchema(Schema):
+    lat = fields.String()
+    lon = fields.String()
